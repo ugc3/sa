@@ -47,7 +47,7 @@ def start(message):
 	        	y= requests.get(url,headers=head11).json()
 	        except requests.exceptions.JSONDecodeError as error:
 	        	bot.send_message(message.chat.id, f"سيشن ايدي خطأ..! ")
-	        	exit()
+	        	
 	        
 	        
 	        
