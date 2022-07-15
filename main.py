@@ -7,7 +7,7 @@ token = "5573895998:AAHgCJScV49aeQbA5qcW4NM0WrrkyXKP0S4"
 bot = telebot.TeleBot(token)
 @bot.message_handler(commands = ['greet','start'])
 def start(message):
-	msg=(f"اهلا بك عزيزي المستخدم هذا البوت مخصص لاستخراج الكوكيز مبرمج البوت : @MVMVP")
+	msg=(f"اهلا بك عزيزي المستخدم هذا البوت مخصص لاستخراج الكوكيز مبرمج البوت : @MVMVP\The number of bot users reached #1k subscribers Thank you everyone\n")
 	bot.send_message(message.chat.id, msg)
 	sleep(2)
 	bot.send_message(message.chat.id, f"Send User and Password - ارسل اليوزر والباسورد\n\n\r                   user:password")
@@ -58,16 +58,16 @@ def start(message):
 			coo =co.get_dict()
 			tok = coo['sessionid']
 			cookiee = f"sessionid={coo['sessionid']};ds_user_id={coo['ds_user_id']};csrftoken={coo['csrftoken']}"
-			bot.send_message(message.chat.id,f"Login True - تسجيل صحيح ✅..\nUsername : {username}\nPassword : {password}\n\n#Cookies - كوكيز\n\n{cookiee}\n\n#Sessionid - سيشن ايدي\n\n{tok}\n\n\n@W_Y67")
+			bot.send_message(message.chat.id,f"Login True - تسجيل صحيح ✅..\nUsername : {username}\nPassword : {password}\n\n#Cookies - كوكيز\n\n{cookiee}\n\n#Sessionid - سيشن ايدي\n\n{tok}\n\n\n@W_Y67 - @MVMVP")
 		elif ('"checkpoint_required"') in rq.text:
-				bot.send_message(message.chat.id,f"The Account Scuer of instagram - هذا الحساب سكيور\n\nUsername : {username} - Password : {password}\n\n@W_Y67")
+				bot.send_message(message.chat.id,f"The Account Scuer of instagram - هذا الحساب سكيور\n\nUsername : {username}\nPassword : {password}\n\n@W_Y67 - @MVMVP")
 		elif ('"Please wait a few minutes before you try again."') in rq.text:
-			bot.send_message(message.chat.id,f"Time Sleep - الحساب محظور من تسجيل الدخول \nUsername : {username} - Password : {password}\n\n@W_Y67")
+			bot.send_message(message.chat.id,f"Time Sleep - الحساب محظور من تسجيل الدخول \nUsername : {username}\nPassword : {password}\n\n@W_Y67 - @MVMVP")
 		elif ('"two_factor_required"') in rq.text:
-			bot.send_message(message.chat.id,f"Phone Number - مصادقة ثنائية\nUsername : {username} - Password : {password}\n\n@W_Y67")
+			bot.send_message(message.chat.id,f"Phone Number - مصادقة ثنائية\nUsername : {username}\nPassword : {password}\n\n@W_Y67 - @MVMVP")
 			
 		else:
-				bot.send_message(message.chat.id,f"- No Password False - كلمة السر غير صحيحة\n\nUsername : {username} - Password : {password}\n\n@W_Y67")
+				bot.send_message(message.chat.id,f"- No Password False - كلمة السر غير صحيحة\n\nUsername : {username}\nPassword : {password}\n\n@W_Y67- @MVMVP")
 				
 while True:
 	try:
