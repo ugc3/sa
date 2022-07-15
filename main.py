@@ -7,7 +7,7 @@ token = "5573895998:AAHgCJScV49aeQbA5qcW4NM0WrrkyXKP0S4"
 bot = telebot.TeleBot(token)
 @bot.message_handler(commands = ['greet','start'])
 def start(message):
-	msg=(f"اهلا بك عزيزي المستخدم هذا البوت مخصص لاستخراج الكوكيز مبرمج البوت : @MVMVP\The number of bot users reached #1k subscribers Thank you everyone\n")
+	msg=(f"اهلا بك عزيزي المستخدم هذا البوت مخصص لاستخراج الكوكيز والسيشن ايدي \n\nThe number of bot users reached #1k subscribers Thank you everyone\n\n@MVMVP - @W_Y67")
 	bot.send_message(message.chat.id, msg)
 	sleep(2)
 	bot.send_message(message.chat.id, f"Send User and Password - ارسل اليوزر والباسورد\n\n\r                   user:password")
